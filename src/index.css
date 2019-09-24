@@ -91,3 +91,9 @@ font-weight: bold;
 .cartBox {
   margin: 20px;
 }
+.productList {
+  padding: 20px;
+}
+.cartList {
+  padding: 200px;
+}

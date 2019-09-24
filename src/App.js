@@ -59,13 +59,13 @@ amountSelected: e.target.value
 
   console.log("App render",this.state)
   return (
-    <div className="container">
+    <div className="container-fluid">
     <div className="row">
-    <div class="col">
+    <div class=" productList col">
 
 <ProductList state={this.state} handleChange={this.handleChange} addProductHandle={this.addProductHandle}/>
 </div>
-<div class="col">
+<div class=" cartList col">
 
 <Cart state={this.state} handleChange={this.handleChange} items={this.state.items} bikeSelected={this.state.bikeSelected} checkoutSelected={this.state.checkoutSelected} checkoutHandleClick={this.checkoutHandleClick} />
 </div>
