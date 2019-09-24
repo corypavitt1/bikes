@@ -59,7 +59,7 @@ amountSelected: e.target.value
 
   console.log("App render",this.state)
   return (
-    <div className="container-fluid">
+    <div className="container">
     <div className="row">
     <div class=" productList col">
 
