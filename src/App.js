@@ -1,26 +1,74 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import data from './BikeRental.json'
+import ProductList from "./ProductList.js"
+import Cart from './Cart.js'
+
 import './App.css';
 
-function App() {
+class  App extends Component {
+
+
+
+state={
+items: [],
+bikeSelected: false,
+checkoutSelected: false,
+value: "",
+amountSelected: ""
+}
+
+checkoutHandleClick = () => {
+  this.setState({
+    checkoutSelected: true
+  })
+}
+
+addProductHandle =(e,product) => {
+e.preventDefault()
+console.log("handleclick",e.target.value)
+
+if(product.product_type == "bike"){
+  this.setState({
+    bikeSelected: true
+  })
+}
+
+  this.setState({
+    items:  this.state.items.concat(product)
+  })
+}
+
+handleChange = (e) => {
+  e.preventDefault()
+  console.log("handleChange",e.target.value)
+this.setState({
+value: e.target.value,
+amountSelected: e.target.value
+})
+
+}
+
+
+
+
+
+
+  render() {
+
+
+
+  console.log("App render",this.state)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+    <div className="row">
+<ProductList state={this.state} handleChange={this.handleChange} addProductHandle={this.addProductHandle}/>
+
+<Cart state={this.state} handleChange={this.handleChange} items={this.state.items} bikeSelected={this.state.bikeSelected} checkoutSelected={this.state.checkoutSelected} checkoutHandleClick={this.checkoutHandleClick} />
+
+    </div>
     </div>
   );
+}
 }
 
 export default App;
