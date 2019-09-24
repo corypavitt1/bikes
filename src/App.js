@@ -62,9 +62,9 @@ amountSelected: e.target.value
     <div className="container-fluid">
     <div className="row">
 <ProductList state={this.state} handleChange={this.handleChange} addProductHandle={this.addProductHandle}/>
-
+<div>
 <Cart state={this.state} handleChange={this.handleChange} items={this.state.items} bikeSelected={this.state.bikeSelected} checkoutSelected={this.state.checkoutSelected} checkoutHandleClick={this.checkoutHandleClick} />
-
+</div>
     </div>
     </div>
   );
