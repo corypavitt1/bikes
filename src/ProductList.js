@@ -64,7 +64,7 @@ class ProductList extends Component {
 {newAccesoriesData}
   </div>
   <div className="addon">
-  <h1>Addons</h1>
+  <h1>Add-on</h1>
 
 {newAddonData}
   </div>
