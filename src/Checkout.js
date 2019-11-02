@@ -1,26 +1,27 @@
-import React, { Component } from 'react';
+import React, {
+  Component
+} from 'react';
 
 class Checkout extends Component {
-pay = () => {
-  alert("THE END")
-}
+  pay = () => {
+    alert("THE END")
+  }
 
   render() {
-    let x = []
-    console.log("checkout",this.props.backToArray)
-
-let newTotal = this.props.backToArray.map(number => {
-  x.push(number.price)
-
+    let total = []
+    console.log("checkout", this.props.backToArray)
+    let newTotal = this.props.backToArray.map(number => {
+      total.push(number.price)
 
 
-})
 
-let b = () => {
-  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    })
 
-return  x.reduce(reducer)
-}
+    let b = () => {
+      const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+      return total.reduce(reducer)
+    }
 
 
 

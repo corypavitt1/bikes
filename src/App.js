@@ -24,6 +24,7 @@ checkoutHandleClick = () => {
 }
 
 addProductHandle =(e,product) => {
+  console.log("addProducthandle",product)
 e.preventDefault()
 console.log("handleclick",e.target.value)
 
@@ -57,11 +58,16 @@ amountSelected: e.target.value
 
 
 
-  console.log("App render",this.state)
+  console.log("App render",this.state.items)
   return (
     <div className="container">
     <div className="row">
     <div class=" productList col">
+
+
+
+
+
 
 <ProductList state={this.state} handleChange={this.handleChange} addProductHandle={this.addProductHandle}/>
 </div>

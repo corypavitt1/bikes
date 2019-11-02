@@ -10,47 +10,41 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-
-
 }
-
 
 .list {
   padding: 10px;
-
 }
 
 .image {
   height: 50px;
   width: 50px;
-
 }
 
 .cart {
-
   position: absolute;
-    top:  50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-color: black;
-    border-width: thin;
-    border-style: solid;
-      margin: 100px;
-      padding: 10px;
-
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: black;
+  border-width: thin;
+  border-style: solid;
+  margin: 100px;
+  padding: 10px;
 }
 
 .bikes {
   border-color: blue;
   border-width: thin;
   border-style: solid;
-    margin: 10px;
+  margin: 10px;
 }
+
 .accessory {
   border-color: blue;
   border-width: thin;
   border-style: solid;
-    margin: 10px;
+  margin: 10px;
 }
 
 .addon {
@@ -59,41 +53,49 @@ code {
   border-width: thin;
   border-style: solid;
 }
-.isBikeSelect {
 
-font-size: 12px;
+.isBikeSelect {
+  font-size: 12px;
   color: red;
 }
+
 .CheckoutButton {
   margin-top: 20px;
 }
+
 .price {
   margin-bottom: 10px;
 }
+
 .cartTitle {
-font-weight: bold;
+  font-weight: bold;
 }
+
 .total {
   font-weight: bold;
   color: blue;
 }
+
 .payButton {
   margin: 10px;
-
 }
+
 .select {
   margin: 10px;
-
 }
+
 .SelectButton {
   margin: 10px;
 }
+
 .cartBox {
   margin: 20px;
 }
+
 .productList {
   padding: 20px;
 }
+
 .cartList {
   padding: 20px;
 }

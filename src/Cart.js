@@ -6,9 +6,9 @@ class Cart extends Component {
 
 
   render() {
-    const uniqueSet = new Set(this.props.items)
+    // const uniqueSet = new Set(this.props.items)
 
-const backToArray = [...uniqueSet]
+const backToArray = [...this.props.items]
 
 
 
